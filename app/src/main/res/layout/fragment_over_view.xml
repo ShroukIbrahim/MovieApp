@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+
+        <ImageView
+                android:id="@+id/calender"
+                android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_date_range_black_24dp"
+        />
+
+        <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="2016-02-07"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                  android:layout_toEndOf="@+id/calender"
+        />
+
+    <RatingBar
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="10"
+            android:layout_toEndOf="@+id/date"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"/>
+        <TextView android:id="@+id/txt_rate"
+                android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toEndOf="@+id/rate"
+                  android:layout_alignParentEnd="true"
+                  android:layout_marginTop="10dp"
+                  android:textSize="12dp"
+                  android:layout_marginStart="10dp"
+                  android:text="7/10"/>
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calender"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="OVERVIEW"
+
+
+    />
+    <TextView
+            android:id="@+id/overview_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="details"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/title"
+
+    />
+
+</RelativeLayout>

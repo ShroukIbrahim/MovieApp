@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+    >
+
+        <ImageView android:layout_width="60dp"
+                   android:layout_height="60dp"
+                   android:id="@+id/img_movie_poster"
+                   tools:src="@drawable/avatar"
+                   android:scaleType="centerCrop"
+        />
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_toEndOf="@id/img_movie_poster"
+                      android:layout_marginStart="6dp"
+                      android:layout_centerVertical="true"
+        >
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textSize="16sp"
+                      android:textStyle="bold"
+                      android:textColor="@android:color/black"
+                      tools:text="Avatar"
+                      android:id="@+id/tv_movie_title"
+            />
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_marginTop="6dp"
+                      android:textSize="14sp"
+                      android:textColor="@android:color/black"
+                      tools:text="Action Movie"
+                      android:id="@+id/tv_movie_description"
+                      android:singleLine="true"
+                      android:ellipsize="marquee"
+            />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
